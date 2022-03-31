@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BookListing" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/action_bar_color</item>
+        <item name="colorPrimaryVariant">@color/action_bar_color</item>
+        <item name="colorOnPrimary">#bdbdbd</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#12005e</item>
+        <item name="colorSecondaryVariant">#bdbdbd</item>
+        <item name="colorOnSecondary">#eceff1</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/action_bar_color</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/lightThemeSurfaceColor</item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#eceff1</item>
+    </style>
+
+    <style name="largeTextTheme" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/actionBar_black</item>
+    </style>
+
+    <style name="imageColor" parent="Widget.AppCompat.ImageButton">
+        <item name="colorPrimary">#bdbdbd</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/lightMode"
+        android:title="Light Mode" />
+    <item android:id="@+id/darkMode"
+        android:title="Dark Mode" />
+    <item android:id="@+id/SystemTheme"
+        android:title="System Default"/>
+</menu>
