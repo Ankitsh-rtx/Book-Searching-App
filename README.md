@@ -1,7 +1,7 @@
 
 # Book Listing App
 
-Application for listing all available Books in one place which helps you in Comparing and Selecting the right Books and Saving tons amount of your time.
+Application for listing all available Books in one place which helps you in Comparing and Selecting the right Books and Saves tons amount of your time.
 
 
 
