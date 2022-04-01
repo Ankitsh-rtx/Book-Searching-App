@@ -5,7 +5,6 @@ Application for listing all available Books in one place which helps you in Comp
 
 
 
-
 ## Features
 
 - Light/dark mode toggle
@@ -16,12 +15,13 @@ Application for listing all available Books in one place which helps you in Comp
 
 ## Screenshots
 
-![](images/home_screen_light)
+- Light Theme <br>
 
+<img src="images/home_screen_light.png" width="250" padding-right="10px" >  <img src="images/search_screen_light.png" width="250"> 
 
-## Appendix
+- Dark Theme <br>
 
-Any additional information goes here
+<img src="images/home_screen_dark.png" width="250"> <img src="images/search_screen_dark.png" width="250">
 
 
 
@@ -30,3 +30,6 @@ Any additional information goes here
 
 If you have any feedback, please reach out to us at anksh617@gmail.com
 
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iam-ankit-shaw/)
