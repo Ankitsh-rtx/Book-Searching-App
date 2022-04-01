@@ -16,7 +16,7 @@ Application for listing all available Books in one place which helps you in Comp
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![](images/home_screen_light)
 
 
 ## Appendix
