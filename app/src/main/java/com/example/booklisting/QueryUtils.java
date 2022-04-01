@@ -29,7 +29,6 @@ public final class QueryUtils {
      * */
     private static final String JSON_BOOK_RESPONSE = "https://www.googleapis.com/books/v1/volumes?q=";
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
-    private static final String API_KEY = "AIzaSyCHrM4xqah6S3sM1FuRnbYWwNMcMLGSvgU";
 
     /**
      * Create a private constructor because no one should ever create a {@link QueryUtils} object.
@@ -54,7 +53,6 @@ public final class QueryUtils {
             final String KEY = "key";
             final String ORDER_BY= "orderBy";
             final String PROJECTION="projection";
-
             // Build up your query URI, limiting results to 10 items and printed books.
             Uri builtURI = Uri.parse(BOOK_BASE_URL).buildUpon()
                     .appendQueryParameter(QUERY_PARAM, queryString)
@@ -62,7 +60,6 @@ public final class QueryUtils {
                     .appendQueryParameter(PRINT_TYPE, "books")
                     .appendQueryParameter(ORDER_BY,"relevance")
                     .appendQueryParameter(PROJECTION,"lite")
-                    .appendQueryParameter(KEY,API_KEY)
                     .build();
 
             url = new URL(builtURI.toString());
