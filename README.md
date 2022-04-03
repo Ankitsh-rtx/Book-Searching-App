@@ -28,7 +28,7 @@ Application for listing all available Books in one place which helps you in Comp
 
 ## Feedback
 
-If you have any feedback, please reach me at anksh617@gmail.com
+If you have any feedback, please reach me at ankitshaw1112@gmail.com
 
 
 ## 🔗 Links
