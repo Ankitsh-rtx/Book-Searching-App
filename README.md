@@ -3,7 +3,8 @@
 
 Application for listing all available Books in one place which helps you in Comparing and Selecting the right Books and Saves tons amount of your time.
 
-
+## Getting Started
+This sample uses the Gradle build system. To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
 
 ## Features
 
