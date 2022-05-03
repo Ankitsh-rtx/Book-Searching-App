@@ -14,20 +14,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Helper methods related to requesting and receiving Book data from Google Book Server;
  */
 public final class QueryUtils {
 
-    /**
-     * Sample JSON response for a Google Book query
-     * */
-    private static final String JSON_BOOK_RESPONSE = "https://www.googleapis.com/books/v1/volumes?q=";
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
 
     /**
@@ -50,7 +45,6 @@ public final class QueryUtils {
             final String QUERY_PARAM = "q"; // Parameter for the search string.
             final String MAX_RESULTS = "maxResults"; // Parameter to show max results
             final String PRINT_TYPE = "printType"; // Parameter to filter by print type.
-            final String KEY = "key";
             final String ORDER_BY= "orderBy";
             final String PROJECTION="projection";
             // Build up your query URI, limiting results to 10 items and printed books.
@@ -113,7 +107,7 @@ public final class QueryUtils {
      */
     private static String readFromInputStream(InputStream inputStream) throws IOException {
         StringBuilder response = new StringBuilder();
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream, Charset.forName("UTF-8"));
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
         BufferedReader reader = new BufferedReader(inputStreamReader);
         String line = reader.readLine();
         while(line!=null){

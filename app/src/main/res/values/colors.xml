@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="actionBar_black">#212121</color>
     <color name="darkThemeSurfaceColor">#121212</color>
-    <color name="lightThemeSurfaceColor">#eceff1</color>
+    <color name="lightThemeSurfaceColor">@color/white</color>
     <color name="lightThemeSurfaceColorDark">#e1f5fe</color>
     <color name="action_bar_color">#12005e</color>
 </resources>

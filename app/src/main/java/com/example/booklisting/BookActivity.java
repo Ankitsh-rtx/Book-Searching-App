@@ -24,9 +24,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,11 +31,9 @@ public class BookActivity extends AppCompatActivity
         implements LoaderCallbacks<List<Book>> {
 
     private static final int BOOK_LOADER_ID = 1;
-    private static final String TAG = "BookActivity";
     private BookAdapter mAdapter;
     private TextView mEmptyState;
     private EditText querySearchTerms;
-    private int NightMode;
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -47,12 +42,10 @@ public class BookActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         sharedPreferences = getSharedPreferences("SharedPrefs", MODE_PRIVATE);
-        NightMode = sharedPreferences.getInt("NightModeInt", 1);
-        AppCompatDelegate.setDefaultNightMode(NightMode);
 
         querySearchTerms = findViewById(R.id.editTextView);
 
-        ListView bookListView = (ListView) findViewById(R.id.listView);
+        ListView bookListView = findViewById(R.id.listView);
         mEmptyState = findViewById(R.id.emptyState);
         bookListView.setEmptyView(mEmptyState);
 
@@ -215,12 +208,12 @@ public class BookActivity extends AppCompatActivity
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        NightMode = AppCompatDelegate.getDefaultNightMode();
+        int nightMode = AppCompatDelegate.getDefaultNightMode();
 
         sharedPreferences = getSharedPreferences("SharedPrefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putInt("NightModeInt", NightMode);
+        editor.putInt("NightModeInt", nightMode);
         editor.apply();
     }
 

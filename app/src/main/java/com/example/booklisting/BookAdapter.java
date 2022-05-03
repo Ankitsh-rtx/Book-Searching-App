@@ -29,8 +29,8 @@ public class BookAdapter extends ArrayAdapter<Book> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
         if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.book, parent, false);
+            listItemView = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.book, parent, false);
         }
         Book currentBook = getItem(position);
 

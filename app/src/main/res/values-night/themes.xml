@@ -7,8 +7,8 @@
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#ffe082</item>
-        <item name="colorSecondaryVariant">#ffe082</item>
+        <item name="colorSecondary">#ffeb3b</item>
+        <item name="colorSecondaryVariant">#ffeb3b</item>
         <item name="colorOnSecondary">#eceff1</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
@@ -19,7 +19,7 @@
 
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#ffd54f</item>
+        <item name="android:textColor">#ffeb3b</item>
     </style>
 
     <style name="largeTextTheme" parent="Widget.AppCompat.TextView">
